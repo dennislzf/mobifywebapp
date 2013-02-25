@@ -1,0 +1,11 @@
+<html>
+ {% block content %}
+      <h2 style= "top:40px" >The counter is at {{i}}</h2>
+<div >
+ <form action="" method="post">
+   {% csrf_token %}
+      <input type="submit" value="Add to the Counter">
+  </form>
+  </div>
+   {% endblock %}
+</html>
